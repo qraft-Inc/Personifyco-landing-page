@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    
+    <title>PELARD-N Report</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Monitoring Documentation Reporting">
+    <meta name="keywords" content="Human Rights,Violation,Northern Uganda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+        <link rel="manifest" href="./manifest.webmanifest">
+    <!-- Compiled and minified CSS -->
+ <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+ 
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link  rel="stylesheet" type="text/css" href="css/auth.css">
+<link  rel="stylesheet" type="text/css" href="css/styles.css">
+<style>
+    .two,.three,.four,.five, div.progress {
+        display: none;
+    }
+
+h1{
+    font-family: 'Changa One', cursive;
+   
+
+}
+    .btn {
+        background-color: var(--Blue);
+    }
+    .logos{
+      width:55px;
+      height:50px;
+      
+    }
+    .partners {
+  display: inline;
+}
+</style>
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+    <div id="create" class="one home-width">
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div id="home-started-card-container" class="one">
+            <div id="home-started-card">
+                <div class="row">
+          <div class="card-image">
+            <div class="spacer"></div>
+           <img src="images/onbod1.png">
+          </div>
+           </div>
+          <div class="card-content center">
+             <h5 class="center">Monitoring Documenting And Reporting(MDR)</h5>
+            <a class="btn btn-small" onclick="moveTologinCard()">Get Started</a>
+            </div>
+            <ul class="slider-dots">
+                <li class="dot active-dot">&bull;</li>
+                <li class="dot">&bull;</li>
+                <li class="dot">&bull;</li>
+              </ul>
+            <ul>
+                <li class = "partners"><a href="#" onclick="moveToWelcomeCard2()">Next</a></li>
+                <li class = "partners logos"><a href="#" onclick="moveToWelcomeCard2()"><i class="fas fa-arrow-right"></a></i> </li>
+            </ul>
+      </div></div></div>
+
+
+
+    <div id="create" class="two home-width">
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div id="home-started-card-container">
+            <div id="home-started-card">
+                <div class="row">
+            <h2 class="header center ">
+          <div class="card-image">
+           <img src="images/onbod3.png">
+          </div>
+           </div>
+          <div class="card-content center">
+              <a class="btn btn-small" onclick="moveTologinCard()">Get Started</a>
+             
+            </div>
+            <ul class="slider-dots">
+                <li class="dot">&bull;</li>
+                <li class="dot active-dot">&bull;</li>
+                <li class="dot">&bull;</li>
+              </ul>
+              <ul>
+                <li class = "partners"><a href="#" onclick="moveToWelcomeCard3()">Next</a></li>
+                <li class = "partners logos"><a href="#" onclick="moveToWelcomeCard3()"><i class="fas fa-arrow-right"></a></i> </li>
+            </ul>
+      </div></div></div>
+
+   
+      <div id="create" class="three home-width">
+        <div class="spacer"></div>
+        
+        <div id="home-started-card-container">
+            <div id="home-started-card">
+                <div class="row">
+            <h2 class="header center ">
+             <span class="#01579b light-blue-text text-darken-4">PELARD-N</span></h2>
+          <div class="card-image">
+           <img src="images/onbod2.png">
+          </div>
+           </div>
+          <div class="card-content center">
+           <h5 class="center">Protection And Empowerment Of Land Rights Defenders-Northern Uganda</h5>
+              <a class="btn btn-small" onclick="moveTologinCard()">Get Started</a>
+            </div>
+            <ul class="slider-dots">
+                <li class="dot">&bull;</li>
+                <li class="dot">&bull;</li>
+                <li class="dot active-dot">&bull;</li>
+              </ul>
+      </div></div></div>
+   
+
+      <div id="create" class="four home-width">
+       
+        <div class="spacer"></div>
+        <div id="home-started-card-container">
+            <div id="home-started-card">
+                <div class="row">
+                        <h2 class="header center ">
+                        <span class="#01579b light-blue-text text-darken-4">PELARD-N</span></h2>
+                    <h5 class="header center black-text">Login</h5>
+                    <span class="red-text" id="login_failed"></span>
+                    <div class="col s12 relative">
+                        <div class="field-status-icons">
+                            <i style="display: none;" id="create-group-email-is-valid" class="green-text mdi-navigation-check"></i>
+                            <i style="display: none;" id="create-group-email-is-not-valid" class="red-text mdi-navigation-close"></i>
+                        </div>
+
+                        <div class="row">
+                            <form class="col s12">
+                        <div class="input-field col s12">
+                            <input placeholder="username" id = "userName" class="validate" type="text"/>
+                            <div class="input-invalid-message">User Name cannot be empty</div>
+                            <label class="input-box" for="first_name">User Name</label>
+                          </div>
+            
+                        <div class="input-field col s12">
+                        <input placeholder="password" id = "password" class="validate" type="password"/>
+                        <div class="input-invalid-message">Password cannot be empty</div>
+                        <label for="password" class="input-box">Password</label>
+                        </div>
+                       </form></div>
+           
+                    </div>
+                    </div>
+                    <!---->
+                    <div class="form-group login-group-checkbox">
+						<input type="checkbox" id="lg_remember" name="lg_remember">
+						<label for="lg_remember">remember me</label>
+                    </div>
+
+                    <div class="etc-login-form">
+                        <p>forgot your password? <a href="forgot.html">click here</a></p>
+                    </div>
+
+                    <!---->
+                    <div id="home-started-card-no-user-panel">
+                        <div class="col s12" id="create-group-message-container">
+                            <div class="materialize-red-text lighten-2"></div>
+                        </div>
+                        <div class="col s12 center relative">
+                            <div style="display: none;" id="create-group-spinner" class="">
+                                                        <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue">
+                                    <div class="circle-clipper right">
+                                        <div class="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            </div> 
+   <button id="create-group-button" 
+            class="btn btn-large strong-text">
+            Login 
+    <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" 
+         viewBox="0 0 24 24">
+
+    <path fill="#ffffff" 
+          d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z">
+    </path>
+
+    </svg>
+    </button>
+
+    </div>
+                    </div>
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                   <div class="etc-login-form">
+                        <p>I dont have an account! <a href="./pages/register.html">Register</a></p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/cardtoggle.js"></script>
+
+   <script>
+    /* if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });
+      } */
+</script>
+</body>
+</html>

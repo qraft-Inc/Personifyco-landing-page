@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    
+    <title>PELARD-N Report</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Monitoring Documentation Reporting">
+    <meta name="keywords" content="Human Rights,Violation,Northern Uganda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Compiled and minified CSS -->
+ <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+ 
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link  rel="stylesheet" type="text/css" href="css/auth.css">
+<link  rel="stylesheet" type="text/css" href="css/styles.css">
+<link  rel="stylesheet" type="text/css" href="css/settings.css">
+<style>
+    header, main, footer {
+        padding-left: 300px;
+      }
+  
+      @media only screen and (max-width : 992px) {
+        header, main, footer {
+          padding-left: 0;
+        }
+      }
+  
+h1{
+    font-family: 'Changa One', cursive;
+   
+
+}
+    .btn {
+        background-color: var(--Blue);
+    }
+    .logos{
+      width:55px;
+      height:50px;
+      
+    }
+    .partners {
+  display: inline;
+}
+</style>
+
+</head>
+
+<body onload="showUserName()">
+
+    <nav> <!-- navbar content here  --> </nav>
+
+  <ul id="slide-out" class="sidenav sidenav-fixed dark">
+            <li>
+                <div class="user-view">
+                        <h3 class="header center ">
+                        <span class="#01579b light-blue-text text-darken-4">PELARD-N</span></h3>
+                  
+                </div>
+            </li>
+
+            <li>
+                <a href="https://pelard-n.org/"><i class="material-icons">home</i>Home</a>
+            </li>
+            <li>
+                <a href="https://www.dashboard.pelard-n.org/"><i class="material-icons">dashboard</i>Review Cases</a>
+            </li>
+             <li><a href="report.html"><i class="material-icons">report</i>Report Cases</a></li>
+            <li>
+                <a href="settings.html"><i class="material-icons">settings</i>Settings</a>
+            </li>
+
+            <li><div class="divider"></div></li>
+            <li><a onclick='logOut()' class="waves-effect"><i class="fas fa-sign-out-alt"></i>Logout</a></li>       
+        
+            
+                  
+        </ul>
+    <a href="#" data-target="slide-out" class=" black-text sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+               
+    <!--Side nav End-->     
+<main>         
+    <div id="create" class="home-width">
+        
+        <div id="home-started-card-container">
+      
+            <div id="home-started-card" class="">
+                <div class="row">
+                    <h5 class="header center black-text">Edit Your Profile</h5>
+                        <!--image-->
+       
+    <div class="avatar-upload">
+        <div class="avatar-edit">
+            <input class="imageput" type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+            <label class="imagelabel" for="imageUpload"></label>
+        </div>
+        <div class="avatar-preview">
+            <div id="imagePreview" style="background-image: url(images/avatar.png);">
+            </div>
+        </div>
+    </div>
+<p id="user"></p>
+<!--image-->
+                    <div class="col s12 relative">
+                        <div class="field-status-icons">
+                            <i style="display: none;" id="create-group-email-is-valid" class="green-text mdi-navigation-check"></i>
+                            <i style="display: none;" id="create-group-email-is-not-valid" class="red-text mdi-navigation-close"></i>
+                        </div>
+                
+                        <label class="input-box">
+                            <input class="input" type="text"
+                              placeholder="New UserName" name="email-address" />
+                            
+                          </label>
+    
+                    </div>
+                    </div>
+                   
+                    <div id="home-started-card-no-user-panel">
+                        <div class="col s12" id="create-group-message-container">
+                            <div class="materialize-red-text lighten-2"></div>
+                        </div>
+                        <div class="col s12 center relative">
+                            <div style="display: none;" id="create-group-spinner" class="">
+                                                        <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue">
+                                    <div class="circle-clipper right">
+                                        <div class="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            </div>
+    <button id="create-group-button" 
+            class="btn btn-large strong-text">
+            Save Changes
+    <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" 
+         viewBox="0 0 24 24">
+
+    <path fill="#ffffff" 
+          d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z">
+    </path>
+
+    </svg>
+    </button>
+
+    </div>
+                    </div>
+                  
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+</main>
+    
+<!-- Footer -->
+<footer class="page-footer">
+            <div class="right footer-copyright">
+                <div class="col l6 s12">
+                    <ul>
+                       
+            <li class="partners"><a class="white-text" href="#!"><img  class="logos" src="images/EU.jpg"></a></li>
+            <li class="partners"><a class="white-text" href="#!"><img  class="logos" src="images/sol.png"></a></li>
+            <li class="partners"><a class="white-text" href="#!"><img  class="logos" src="images/gwed.jpg"></a></li>
+            <li class="partners"><a class="white-text" href="#!"><img  class="logos" src="images/hurifo.jpg"></a></li>
+          
+                    </ul>
+                </div>
+            </div>
+        </footer>
+  <!-- Footer -->
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+function logOut(){
+    sessionStorage.clear();
+    window.location = '/index.html';
+}
+
+</script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+</script>
+<script src="../js/settings.js"></script>
+<script>
+
+function showUserName(){
+ const userName= sessionStorage.getItem('userName');
+ return document.getElementById("user").innerHTML =(`${userName}`);
+}
+       </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    
+    <title>Personify</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Monitoring Documentation Reporting">
+    <meta name="keywords" content="Human Rights,Violation,Northern Uganda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Compiled and minified CSS -->
+ <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+ 
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link  rel="stylesheet" type="text/css" href="../css/auth.css">
+<link  rel="stylesheet" type="text/css" href="../css/styles.css">
+<link  rel="stylesheet" type="text/css" href="../css/settings.css">
+<style>
+    header, main, footer {
+        padding-left: 300px;
+      }
+  
+      @media only screen and (max-width : 992px) {
+        header, main, footer {
+          padding-left: 0;
+        }
+      }
+  
+h1{
+    font-family: 'Changa One', cursive;
+   
+
+}
+    .btn {
+        background-color: var(--Blue);
+    }
+    .logos{
+      width:55px;
+      height:50px;
+      
+    }
+    .partners {
+  display: inline;
+}
+</style>
+
+</head>
+
+<body>
+
+    <nav> <!-- navbar content here  --> </nav>
+
+  <ul id="slide-out" class="sidenav sidenav-fixed dark">
+            <li>
+                <div class="user-view">
+                  
+                        <h3 class="header center ">
+                        <span class="#01579b light-blue-text text-darken-4">PELARD-N</span></h3>
+                  
+                </div>
+            </li>
+
+            <li>
+                <a href="https://pelard-n.org/"><i class="material-icons">home</i>Home</a>
+            </li>
+            <li>
+                <a href="https://www.dashboard.pelard-n.org/"><i class="material-icons">dashboard</i>Review Cases</a>
+            </li>
+             <li><a href="report.html"><i class="material-icons">report</i>Report Cases</a></li>
+            <li>
+                <a href="settings.html"><i class="material-icons">settings</i>Settings</a>
+            </li>
+
+            <li><div class="divider"></div></li>
+            <li><a onclick='logOut()' class="waves-effect"><i class="fas fa-sign-out-alt"></i>Logout</a></li>       
+     
+            
+                  
+        </ul>
+    <a href="#" data-target="slide-out" class=" black-text sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+               
+    <!--Side nav End-->     
+<main>         
+
+<div class="container">
+          <ul >
+            <li class="partners">
+                <a href="https://pelard-n.org/"><i class="material-icons">home</i>Home</a>
+            </li><hr>
+            <li class="partners">
+                <a href="https://www.dashboard.pelard-n.org/"><i class="material-icons">dashboard</i>Review Cases</a>
+            </li><hr>
+             <li class="partners"><a href="report.html"><i class="material-icons">report</i>Report Cases</a></li><hr>
+            <li class="partners"><a onclick='logOut()' class="waves-effect"><i class="fas fa-sign-out-alt"></i>Logout</a></li> <hr>           
+        </ul>
+        </div>
+    
+     <div class="form-section__header">
+                <h3 class="header center ">
+                <span class="white-text">Case Submitted</span></h3>
+          </div>
+<div class="container">
+          <ul >
+              <li ><a href="#!"><img  src="../images/onbod3.png"></a></li><br>
+            </ul>
+        </div>
+</main>
+    
+<!-- Footer -->
+<footer class="page-footer">
+            <div class="right footer-copyright">
+                <div class="col l6 s12">
+                    <ul>
+                       
+            <li class="partners"><a class="white-text" href="#!"><img  class="logos" src="../images/EU.jpg"></a></li>
+            <li class="partners"><a class="white-text" href="#!"><img  class="logos" src="../images/sol.png"></a></li>
+            <li class="partners"><a class="white-text" href="#!"><img  class="logos" src="../images/gwed.jpg"></a></li>
+            <li class="partners"><a class="white-text" href="#!"><img  class="logos" src="../images/hurifo.jpg"></a></li>
+          
+                    </ul>
+                </div>
+            </div>
+        </footer>
+  <!-- Footer -->
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+function logOut(){
+    sessionStorage.clear();
+    window.location = '/index.html';
+}
+
+</script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+</script>
+<script src="../js/settings.js"></script>
+</body>
+</html>
