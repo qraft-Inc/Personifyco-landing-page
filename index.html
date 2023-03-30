@@ -330,17 +330,21 @@
                          </li>
                          </ul>
          <div class="chatbot">
-                         <button id="create-group-button" class="btn btn-large white-text right">
+                         <button id="submit1" class="btn btn-large white-text right">
                              <i class = "material-icons">send</i>
                          </button>
                  
                         </div>
 
-
+<div>
+    <p id="chat-output"></p>
+    <p id="chat-output1"></p>
+    <p id="chat-output2"></p>
+</div>
                          <div class="chatbot">
                             <form>
                                 <textarea name="prompt" cols="1" rows="1" placeholder="Ask anything..."></textarea>
-                                <button type="submit"><img src="assets/send.svg"></button>
+                                <button id="submit2" ><img src="assets/send.svg"></button>
                               </form>
                           </div>
                     </div>
@@ -375,8 +379,11 @@
                             </tbody>
                           </table>
                     </div>
+                    <button  class="btn btn-large white-text right">
+                       <p>Export</p>
+                    </button>
                   </div>
-              
+               
               
                 <div class="progress">
         <div class="indeterminate"></div>
@@ -405,7 +412,7 @@
     </div>
 </footer>
 <!-- Footer -->
-
+<script src="./API/openapi.js" type="text/javascript"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
