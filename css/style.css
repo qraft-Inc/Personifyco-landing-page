@@ -26,7 +26,7 @@ body{
 .wrapper .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: #FAFBFD;
   /* background: #69191B !important; */
   padding: 15px 17px;
   border-top-left-radius: 20px;
@@ -36,7 +36,7 @@ body{
 .wrapper .top_navbar .hamburger div{
   width: 35px;
   height: 4px;
-  background: white;
+  background: black;
   margin: 5px 0;
   border-radius: 5px;
 }
@@ -72,9 +72,9 @@ body{
   height: 35px;
   line-height: 35px;
   text-align: center;
-  border: 1px solid #01579b;
+  border: 1px solid #FAFBFD;
   border-radius: 50%;
-  color: #01579b;
+  color: #FAFBFD;
 }
 
 .wrapper .top_navbar .top_menu ul li a:hover{
@@ -90,7 +90,7 @@ body{
   position: fixed;
   top: 60px;
   left: 10px;
-  background: #01579b;
+  background: #FAFBFD;
   width: 200px;
   height: calc(100% - 80px);
   border-bottom-left-radius: 20px;
@@ -102,10 +102,10 @@ body{
 .wrapper .sidebar ul li a{
     display: block;
     padding: 20px;
-    color: #01579b;
+    color: #FAFBFD;
     position: relative;
     margin-bottom: 1px;
-    color: white;
+    color: black;
     white-space: nowrap;
 }
 
@@ -116,7 +116,7 @@ body{
   left: 0;
   width: 3px;
   height: 100%;
-  background: #01579b;
+  background: #FAFBFD;
   display: none;
 }
 
@@ -131,8 +131,8 @@ body{
 
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active{
-  background: #2e4ead;
-  color: #fff;
+  background: #FAFBFD;
+  color: black;
 }
 
 .wrapper .sidebar ul li a:hover:before,
@@ -176,4 +176,203 @@ body{
 .wrapper.collapse .main_container{
   width: (100% - 1px);
   margin-left: 0px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.chatbot {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.chatbot h2 {
+  margin-bottom: 10px;
+}
+
+
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background: #343541;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#chat_container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+/* hides scrollbar */
+#chat_container::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.ai {
+  background: #40414F;
+}
+
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+
+  background: #5436DA;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai .profile {
+  background: #10a37f;
+}
+
+.profile img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.message {
+  flex: 1;
+
+  color: #dcdcdc;
+  font-size: 20px;
+
+  max-width: 100%;
+  overflow-x: scroll;
+
+  /*
+   * white space refers to any spaces, tabs, or newline characters that are used to format the CSS code
+   * specifies how white space within an element should be handled. It is similar to the "pre" value, which tells the browser to treat all white space as significant and to preserve it exactly as it appears in the source code.
+   * The pre-wrap value allows the browser to wrap long lines of text onto multiple lines if necessary.
+   * The default value for the white-space property in CSS is "normal". This tells the browser to collapse multiple white space characters into a single space, and to wrap text onto multiple lines as needed to fit within its container.
+  */
+  white-space: pre-wrap; 
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hides scrollbar */
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #40414F;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+
+  color: #fff;
+  font-size: 18px;
+
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+form img {
+  width: 30px;
+  height: 30px;
 }

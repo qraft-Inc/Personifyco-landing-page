@@ -94,32 +94,26 @@
 <body>
 
 <div class="wrapper">
-
+    
 
 
     
   <div class="top_navbar">
     <div class="hamburger">
-       <div class="one"></div>
-       <div class="two"></div>
-       <div class="three"></div>
-    </div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+     </div>
     <div class="top_menu">
       <div class="left">
         <div class="user-view">
                  
             <h4 class="header center ">
-            <span class="light-blue-text text-darken-4">Personify</span></h4>
+            <span class="light-blue-text text-darken-4">Personifyco</span></h4>
        
     </div>
       </div>
-      <form class="left">
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
+     
       <ul>
         
         <!-- <li><a href="#">
@@ -127,7 +121,7 @@
         <li><a href="#">
           <i class="fas fa-bell"></i>
           </a></li>
-        <li><a href="settings.html">
+        <li><a href="#">
           <i class="fas fa-user"></i>
           </a></li>
       </ul>
@@ -138,23 +132,21 @@
   <div class="sidebar">
       <ul>
         <li><a href="index.html" class="active">
-            <span class="icon"><i class="material-icons">report</i></span>
-            <span class="title">Generate Personas</span></a>
+            <span class="icon"><i class="material-icons">chat_bubble_outline</i></span>
+            <span class="title">Generate Persona</span></a>
         </li>
             <li><a href="#" target="_blank">
-                <span class="icon"><i class="material-icons">dashboard</i></span>
-                <span class="title">Dashboard</span>
+                <span class="icon"><i class="material-icons">chat</i></span>
+                <span class="title">Templates</span>
                 </a></li>
 
           <li><a href="#" target="_blank">
-                    <span class="icon"><i class="fas fa-book"></i></span>
-                    <span class="title">Blog</span>
+                    <span class="icon"><i class="material-icons">chat_bubble</i></span>
+                    <span class="title">Projects</span>
                     </a></li>
      
 
           <li><a href="#">
-            <span class="icon"><i class="fas fa-home"></i></span>
-            <span class="title">Home</span></a></li>
 
           <li><div class="divider"></div></li>
         <li><a onclick='logOut()' class="waves-effect">
@@ -167,7 +159,7 @@
 
   
   <div class="main_container">
-      <div class="container">
+      <div>
     <div class="row">
         
         <main>
@@ -188,32 +180,25 @@
                         <ul class = "collapsible popout" data-collapsible = "accordion">
                             <li>
                                <div class = "collapsible-header">
-                                  <i class = "material-icons">filter_drama</i>1.Role</div>
+                                  <i class = "material-icons">filter_drama</i>As A(Role)</div>
                                <div class = "collapsible-body">
          
                                  <div class="card-one" >
                                      <div >
                                          <div class="row">
-                                             <h5 class="header center #01579b light-blue-text text-darken-4">As A</h5>
+                                            <label for="cars">Choose a role:</label>
+                                            <select name="cars" id="cars">
+                                              <option value="volvo">UX Researcher</option>
+                                              <option value="saab">Product Manager</option>
+                                              <option value="opel">Sales Professional</option>
+                                              <option value="audi">Marketing Professional</option>
+                                            </select>
+                                            <br><br>
+                               
                                              <div class="col s12 relative">
                  
                                                       <!-- Dropdown Trigger -->
-  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Choose</a>
 
-  <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!">UX Researcher</a></li>
-    <li><a href="#!">Product Manager </a></li>
-    <li><a href="#!">Sales Professional</a></li>
-    <li><a href="#!">Marketing Professional</a></li>
- 
-  </ul>
-                 
-                                                
-                                                
-                 
-                                             
-                 
                                                   <!-- <button class="btn btn-small" onclick="moveToCard2()">Continue</button> -->
                                              </div>
                                          </div>
@@ -225,98 +210,17 @@
                             
                             <li>
                                <div class = "collapsible-header">
-                                  <i class = "material-icons">place</i>xxx</div>
+                                  <i class = "material-icons">branding_watermark</i>For (Company)</div>
                                <div class = "collapsible-body">
                                    
                                  <div class="card-two" >
                                      <div >
                                          <div class="row">
-                                             <h5 class="header center #01579b light-blue-text text-darken-4">xxx</h5>
-                                             <br />
-                                             <br />
-                                             <div class="col s12 relative">
-                 
-                                                     <div class="input-field col s12">
-                                                        <select id="districtOfViolation">
-                                                         <option value="" disabled selected> xxx</option>
-                                                         <option value="1">xxx</option>
-                                                         <option value="2">xxx</option>
-                                                         <option value="3">xxx</option>
-                                                         <option value="4">xxx</option>
-                                                         <option value="5">xxx</option>
-                                                     
-                                                     </select>
-                                                         <label>xxx</label>
-                                                      </div>
-                                 
-                                                   <div class="input-field col s12">
-                                                   <textarea placeholder="" id="village" class=" materialize-textarea"></textarea>
-                                                 <label class="input-box ">xxx</label>
-                                                   </div>
-                 
-                                                  <div class="input-field col s12">
-                                                  <select id="violationType">
-                                                         <option value="" disabled selected> xxx</option>
-                                                         <!-- <option value="1">Indecent assault</option>
-                                                         <option value="2">Domestic Violance</option>
-                                                         <option value="3">Attempted Murder</option> -->
-                                                         <option value="4">xxx</option>
-                                                         <option value="5">xxx</option>
-                                                         <option value="6">xxx</option>
-                                                         
-                                                         <!-- <option value="7">Arbitrary arrests</option>
-                                                         <option value="8">Arbitrary detentions</option>
-                                                         <option value="9">Detention beyond 48 hours</option>
-                                                         <option value="10">Detention in ungazetted places</option>
-                                                         <option value="11">Detention without trial</option>
-                                                         <option value="12">Enforced disappearances</option> -->
-                 
-                                                         <!-- <option value="13">Prolonged detention</option>
-                                                         <option value="14">Torture or cruel, inhuman or degrading treatment or punishment</option> -->
-                                                         <option value="15">xxx.</option>
-                                                         <option value="16">xxx</option>
-                                                         <!-- <option value="17">Violation of the right to adequate time and facilities for preparation of defence</option>
-                                                         <option value="18">Violation of the right to an effective remedy for human rights violations</option> -->
-                                                         
-                                                         <!-- <option value="19">Violation of the right to appear in court in person or by a lawyer of choice</option> -->
-                                                         <!-- <option value="20">Violation of the right to legal representation at the expense of the state in offences</option> -->
-                                                         <option value="21">xxx</option>
-                                                          <!-- <option value="22">Violations related to frivolous charges</option> -->
-                                                          <option value="22">xxx</option>
-                                                     </select>
-                                                <label class="input-box ">xxx</label>
-                                                 </div>
-                 
-                                                   <div class="input-field col s12">
-                                                   <textarea maxlength="100" placeholder="" id="violationDescription" class=" materialize-textarea"></textarea>
-                                                 <label class="input-box ">xxx</label>
-                                                   </div>
-                 
-                                                
-                                                   <div class="input-field col s12">
-                                                     <textarea placeholder="" id="injuries"  class="materialize-textarea"></textarea>
-                                                  <label class="input-box">xxx</label>
-                                                    </div>
-                 
-                                                     <div class="input-field col s12">
-                                                     <textarea placeholder="" id="contactAuthority" class="materialize-textarea"></textarea>
-                                                 <label class="input-box ">xxx</label>
-                                                     </div>
-                 
-                                                 <div class="input-field col s12">
-                                                     <textarea placeholder="" id="authorityResponse" class="materialize-textarea"></textarea>
-                                                 <label class="input-box">xxx</label>
-                                                   </div>
-                 
-                                                <div class="input-field col s12">
-                                                     <textarea placeholder="" id="otherViolation"class="materialize-textarea"></textarea>
-                                                  <label class="input-box">xxx</label>
-                                                 </div>
-                 
-                                                 <!-- <button class="btn btn-small" onclick="moveBackToCard1()">Back</button>
-                                                 <button class="btn btn-small" onclick="moveToCard3()">Continue</button> -->
-                                                 
-                                             </div>
+                                            <div class="input-field col s12">
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email">Brand/Company</label>
+                                              </div>
+                                          
                                          </div>
                                      </div>
                                  </div>
@@ -326,61 +230,19 @@
                             
                             <li>
                                <div class = "collapsible-header">
-                                  <i class = "material-icons">people</i>3xxx</div>
+                                  <i class = "material-icons">person</i>Create (Type)Persona</div>
                                <div class = "collapsible-body">
                                    
                                  <div class="card-three" >
                                      <div>
                                          <div class="row">
-                                             <h5 class="header center #01579b light-blue-text text-darken-4">xxx</h5>
-                                             <div class="col s12 relative">
-                 
-                                             <div class="input-field col s12">
-                                                     <input placeholder="" id="victimName"type="text" class="validate input" />
-                                                      <label class="input-box">xxx</label>
-                                                     <div class="input-invalid-message">xxx</div>
-                                                 </div>
-         
-                                                 <div class="input-field col s12">
-                                                     <select id="gender">
-                                                      <option value="" disabled selected> xxx</option>
-                                                      <option value="1">xxx</option>
-                                                      <option value="2">xxx</option>
-                                                     
-                                                  </select>
-                                                      <label>xxx</label>
-                                                   </div>
-         
-                                              <div class="input-field col s12">
-                                               <textarea id="otherVictim"  class="materialize-textarea"></textarea>
-                                                 <label class="input-box">xxx</label>
-                                               </div>
-                 
-                                                 <div class="input-field col s12">
-                                                  <input placeholder="" id="suspectName" class="validate input" type="text" />
-                                                 <label class="input-box">xxx</label>
-                                                 <div class="input-invalid-message">xxx</div>
-                                                  </div>
-                                                 
-                                                 <div class="input-field col s12">
-                                                 <textarea id="otherSuspect" class="materialize-textarea"></textarea>
-                                                 <label class="input-box"> Any Other Suspets</label>
-                                                </div>
-                 
-                                                  <div class="input-field col s12">
-                                                     <input placeholder="" id="witnessName" class="input" type="text"  />
-                                                     <label class="input-box">Witness'Name </label>
-                                                     <div class="input-invalid-message">Witness cannot be empty</div>
-                                                </div>
-                 
-                                                   <div class="input-field col s12">
-                                                 <label class="input-box">Any Other Witnesses</label>
-                                                     <textarea placeholder="" id="otherWitness"class="materialize-textarea"></textarea>
-                                                   </div>
-                 
-                                                 <!-- <button class="btn btn-small" onclick="moveBackToCard2()">Back</button>
-                                                 <button class="btn btn-small" onclick="moveToCard4()">Continue</button> -->
-                                             </div>
+                                             <label for="cars">Choose A Persona Type:</label>
+                                             <select name="cars" id="cars">
+                                               <option value="volvo">User Persona</option>
+                                               <option value="saab">Buyer Persona</option>
+                                               <option value="opel">Negative Persona</option>
+                                               <option value="audi">Goal-directed Persona</option>
+                                             </select>
                                          </div>
                                      </div>
                                  </div>
@@ -390,35 +252,20 @@
          
                             <li>
                              <div class = "collapsible-header">
-                                <i class = "material-icons">whatshot</i>4.xxx</div>
+                                <i class = "material-icons">whatshot</i>For Product</div>
                              <div class = "collapsible-body">
                            
                                  <div class="card-four" >
                                      <div>
                                          <div class="row">
-                                             <h5 class="header center #01579b light-blue-text text-darken-4">xxx</h5>
-                                             <div class="col s12 relative">
-                                                 <div class="field-status-icons">
-                                                     <i style="display: none;" id="create-group-email-is-valid" class="green-text mdi-navigation-check"></i>
-                                                     <i style="display: none;" id="create-group-email-is-not-valid" class="red-text mdi-navigation-close"></i>
-                                                 </div>
+                                             
+                                             <div class="input-field col s12">
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email">Product</label>
+                                              </div>
                  
-                                                 <div class="file-field input-field col s12">
-                                                     <div class="btn">
-                                                         <span>Upload File</span>
-                                                         <input type="file" id="img" name="img" accept="audio/*,video/*,image/*" />
-                                                     </div>
-                                                     <div class="file-path-wrapper">
-                                                         <input class="file-path validate" type="text" />
-                                                     </div>
-                                                 </div>
                  
-                                                 <div class="input-field col s12">
-                                                  <label class="input-box">Uploaded File Description</label>
-                                                 <textarea placeholder="" id="fileDescription" class="materialize-textarea"></textarea>
-                                                 </div>
-                 
-                                                 <button class="btn btn-small" onclick="moveBackToCard3()">Back</button>
+        
                                              </div>
                                          </div>
                                          <div id="home-started-card-no-user-panel">
@@ -442,15 +289,91 @@
                              
                              </div>
                           </li>
+                          <li>
+                            <div class = "collapsible-header">
+                               <i class = "material-icons">map</i>In (Geographical Location)</div>
+                            <div class = "collapsible-body">
+                          
+                                <div class="card-four" >
+                                    <div>
+                                        <div class="row">
+                                            
+                                            <div class="input-field col s12">
+                                               <input id="email" type="email" class="validate">
+                                               <label for="email">Geographical Location</label>
+                                             </div>
+                
+                
+       
+                                            </div>
+                                        </div>
+                                        <div id="home-started-card-no-user-panel">
+                                            <div class="col s12" id="create-group-message-container">
+                                                <div class="materialize-red-text lighten-2"></div>
+                                            </div>
+                                            <div class="col s12 center relative">
+                                                <div style="display: none;" id="create-group-spinner" class="">
+                                                    <div class="preloader-wrapper small active">
+                                                        <div class="spinner-layer spinner-blue">
+                                                            <div class="circle-clipper right">
+                                                                <div class="circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                              
+                                    </div>
+                                </div>
+                            
+                            </div>
+                         </li>
                          </ul>
-         
-                         <button id="create-group-button" class="btn btn-large white-text right #4a148c purple darken-4">
-                             GENERATE
+         <div class="chatbot">
+                         <button id="create-group-button" class="btn btn-large white-text right">
+                             <i class = "material-icons">send</i>
                          </button>
+                 
+                        </div>
+
+
+                         <div class="chatbot">
+                            <form>
+                                <textarea name="prompt" cols="1" rows="1" placeholder="Ask anything..."></textarea>
+                                <button type="submit"><img src="assets/send.svg"></button>
+                              </form>
+                          </div>
                     </div>
 
                     <div class="col s6">
-                        <h5>Generated Persona</h5>
+                        <h5>Edit Persona</h5>
+                        <table>
+                            <thead>
+                              <tr>
+                                  <th>BIO</th>
+                                  <th>PAINS</th>
+                                  <th>MOTIVATIONS</th>
+                              </tr>
+                            </thead>
+                    
+                            <tbody>
+                              <tr>
+                                <td> <textarea name="prompt" cols="1" rows="1" placeholder="Bio..."></textarea></td>
+                                <td> <textarea name="prompt" cols="1" rows="1" placeholder="Pains..."></textarea></td>
+                                <td> <textarea name="prompt" cols="1" rows="1" placeholder="Motivations..."></textarea></td>
+                              </tr>
+                              <tr>
+                                <td>Devices</td>
+                                <td>Brands</td>
+                                <td>Gains</td>
+                              </tr>
+                              <tr>
+                                <td> <textarea name="prompt" cols="1" rows="1" placeholder="Bio..."></textarea></td>
+                                <td> <textarea name="prompt" cols="1" rows="1" placeholder="Pains..."></textarea></td>
+                                <td> <textarea name="prompt" cols="1" rows="1" placeholder="Motivations..."></textarea></td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
                   </div>
               
